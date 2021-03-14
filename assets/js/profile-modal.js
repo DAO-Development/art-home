@@ -1,6 +1,5 @@
-
-const funShow = () => {	
-	funHide1();
+const funShow = () => {
+  funHide1();
   const someElem = document.getElementById('sign-in-m') //твой айдишник
   someElem.classList.add("vis") //класс показывающий модалку (css)
 }
@@ -17,7 +16,6 @@ const funShow1 = () => {
 }
 
 const funHide1 = () => {
-
   const someElem = document.getElementById('sign-up-m') //твой айдишник
   someElem.classList.remove("vis") //класс скрывающий модалку (css)
 }
@@ -33,6 +31,8 @@ const funHide2 = () => {
   someElem.classList.remove("vis") //класс скрывающий модалку (css)
 }
 document.getElementById("profile").addEventListener("click", funShow);
+document.getElementById("t-profile").addEventListener("click", funShow);
+document.getElementById("profile-mobile").addEventListener("click", funShow);
 document.getElementById("already-s-u").addEventListener("click", funShow);
 document.getElementById("close-s-i-m").addEventListener("click", funHide);
 

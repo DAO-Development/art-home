@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+button{
+  transition: .3s;
+}
+button:focus{
+	outline:none;
+}
 html{
-	font-family: Roboto;
+	font-family: Roboto, monospace;
 	color: #707070;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
 }
 
+.padding{
+  padding: 0rem 23.5% 3rem;
+}
+.s-padding{
+  padding: 2rem 19.5% 5rem;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+
+}
 li{
 	list-style: none;
 }
@@ -23,18 +43,71 @@ ul{
 img{
 	width: 100%;
 }
-span img{
-	width: auto;
-}
+
 h2, h3{
 	color: #343434;
 }
-@media(max-width: : 700px){
-	main{
-		padding: 0 ;
+@media(max-width: 960px){
+	html main, .padding, .s-padding{
+		padding: 0 1%;
 	}
+}
 
-	.m-content{
-		left:0;
+@media(max-width: 500px){
+	main{
+		padding: 3% !important;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+
+
+@media (min-width: 1800px){
+	html{
+		/*font-size: 1.5em;*/
+	}
+}
+
+
+@media (min-width: 500px){
+		button{
+			font-size: 1rem;
+		}
+
+		input{
+			font-size: 0.8rem;
+		}
+}
+
+@media (min-width: 481px) and (max-width: 960px){
+	html main{
+	    /*width: 96%;*/
+	    margin: 0 auto;
+	    padding: 2rem 3% !important;
+	  }
+}
+
+	main button{
+		border:2px solid #E253B6!important;
+	}
+@media (min-width: 481px) {
+
+	/*main button:hover{
+		background-color: #E253B6 !important;
+		color: #fff !important;
+	}*/
+	main button:hover{
+		background-color: #fff !important;
+		color: #E253B6 !important;
+	}
+  	main .mailing {
+    	padding: 0 17% !important;
+  	}
+}
+@media(min-width: 961px) and (max-width: 1500px){
+	main{
+		padding-left:11% !important;
+		padding-right: 11% !important; 	 
 	}
 }
